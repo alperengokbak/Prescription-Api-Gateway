@@ -7,7 +7,7 @@ const PORT = 3000;
 app.use(
   "/payment-service",
   createProxyMiddleware({
-    target: "http://localhost:3001/",
+    target: "https://prescription-payment-service.onrender.com",
     pathRewrite: {
       "^/payment-service": "",
     },
@@ -17,7 +17,7 @@ app.use(
 app.use(
   "/prescription-service",
   createProxyMiddleware({
-    target: "http://localhost:3002/",
+    target: "https://prescription-service-kttk.onrender.com",
     pathRewrite: {
       "^/prescription-service": "",
     },
