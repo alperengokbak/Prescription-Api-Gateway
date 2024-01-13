@@ -10,7 +10,7 @@ app.use(cors());
 app.use(
   "/payment-service",
   createProxyMiddleware({
-    target: "https://prescription-payment-service.onrender.com",
+    target: "https://prescription-payment-service.onrender.com/",
     pathRewrite: {
       "^/payment-service": "",
     },
@@ -20,7 +20,7 @@ app.use(
 app.use(
   "/prescription-service",
   createProxyMiddleware({
-    target: "https://prescription-service-kttk.onrender.com",
+    target: "https://prescription-service-kttk.onrender.com/",
     pathRewrite: {
       "^/prescription-service": "",
     },
