@@ -11,6 +11,7 @@ app.use(
   "/payment-service",
   createProxyMiddleware({
     target: "https://prescription-payment-service.onrender.com/",
+    changeOrigin: true,
     pathRewrite: {
       "^/payment-service": "",
     },
@@ -21,6 +22,7 @@ app.use(
   "/prescription-service",
   createProxyMiddleware({
     target: "https://prescription-service-kttk.onrender.com/",
+    changeOrigin: true,
     pathRewrite: {
       "^/prescription-service": "",
     },
