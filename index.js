@@ -1,8 +1,11 @@
 import express from "express";
 import { createProxyMiddleware } from "http-proxy-middleware";
+import cors from "cors";
 
 const app = express();
 const PORT = 3000;
+
+app.use(cors());
 
 app.use(
   "/payment-service",
