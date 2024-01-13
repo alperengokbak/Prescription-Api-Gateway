@@ -25,7 +25,7 @@ This project serves as an API Gateway for coordinating and proxying requests to 
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/alperengokbak/Prescription-Api-Gateway
+   git clone https://github.com/alperengokbak/Prescription-Api-Gateway.git
    ```
 
 2. Navigate to the project directory:
